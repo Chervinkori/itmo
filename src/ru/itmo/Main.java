@@ -2,6 +2,7 @@ package ru.itmo;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
+import ru.itmo.lesson.FourthLesson;
 import ru.itmo.lesson.SecondLesson;
 import ru.itmo.lesson.ThirdLesson;
 
@@ -9,7 +10,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        thirdLesson();
+        // secondLesson();
+        // thirdLesson();
+        fourthLesson();
     }
 
     /**
@@ -38,5 +41,17 @@ public class Main {
         System.out.println(ThirdLesson.fifth(20));
         System.out.println(Arrays.toString(ThirdLesson.sixth()));
         ThirdLesson.seventh(Utils.getRandomArray(Utils.getRandomInt(5, 20), -10, 10), 5);
+    }
+
+    /**
+     * 4-й урок
+     */
+    public static void fourthLesson() {
+        System.out.println(FourthLesson.first("123", "1234", "123456", "12345"));
+        System.out.println("lol" + " - " + (FourthLesson.second("lol") ? "полиндром" : "не полиндром"));
+        System.out.println(FourthLesson.third("бука бяка забияка"));
+        System.out.println(FourthLesson.fourth("бука бяка забияка", "бука"));
+        System.out.println(FourthLesson.fourth("", "123"));
+        System.out.println(FourthLesson.fifth("This is a test string"));
     }
 }
