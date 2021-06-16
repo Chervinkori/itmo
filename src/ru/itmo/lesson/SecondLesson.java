@@ -1,4 +1,4 @@
-package ru.lotonline;
+package ru.itmo.lesson;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Без использования встроенных методов.
+ * 2й урок.
  *
  * @author chervinko <br>
  * 10.06.2021

@@ -1,10 +1,12 @@
-package ru.lotonline;
+package ru.itmo.lesson;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 /**
+ * 1й урок.
+ *
  * @author chervinko <br>
  * 10.06.2021
  */
@@ -12,7 +14,7 @@ public class FirstLesson {
     /**
      * Выведите строки в следующем порядке:
      */
-    private static void first() {
+    public static void first() {
         System.out.println("Я");
         System.out.println("хорошо");
         System.out.println("знаю");
@@ -24,7 +26,7 @@ public class FirstLesson {
      * (46 + 10) * (10 / 3)
      * (29) * (4) * (-15)
      */
-    private static void second() {
+    public static void second() {
         int first = (46 + 10) * (10 / 3);
         int second = (29) * (4) * (-15);
     }
@@ -33,7 +35,7 @@ public class FirstLesson {
      * В переменной number, лежит целое число 10500. В переменной result посчитайте следующее
      * выражение: (number / 10) / 10. Результат выведите на консоль.
      */
-    private static void third() {
+    public static void third() {
         int number = 10500;
         int result = (number / 10) / 10;
         System.out.println(result);
@@ -42,7 +44,7 @@ public class FirstLesson {
     /**
      * Даны три числа: 3.6, 4.1, 5.9. В переменной result посчитайте произведение этих чисел.
      */
-    private static void fourth() {
+    public static void fourth() {
         double result = 3.6 * 4.1 * 5.9;
     }
 
@@ -53,7 +55,7 @@ public class FirstLesson {
      * 100
      * 125
      */
-    private static void fifth() {
+    public static void fifth() {
         List<Integer> params = new ArrayList<>();
 
         String msg = "Введите целое число: ";
@@ -76,7 +78,7 @@ public class FirstLesson {
      * Если b четное и больше 100, выведите “Выход за пределы диапазона”
      * ! Использовать класс Scanner: int b = scanner.nextInt();
      */
-    private static void sixth() {
+    public static void sixth() {
         String msg = "Введите целое число: ";
         Scanner in = new Scanner(System.in);
         System.out.println(msg);
