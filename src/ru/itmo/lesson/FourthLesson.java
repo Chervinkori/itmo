@@ -92,4 +92,22 @@ public class FourthLesson {
 
         return str;
     }
+
+    public static int[] bubbleSort(int[] arr) {
+        boolean flag;
+        do {
+            flag = false;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i + 1] < arr[i]) {
+                    int tmp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = tmp;
+                    flag = true;
+                }
+            }
+        }
+        while (flag);
+
+        return arr;
+    }
 }
