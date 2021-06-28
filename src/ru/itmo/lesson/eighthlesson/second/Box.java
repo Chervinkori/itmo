@@ -1,4 +1,4 @@
-package ru.itmo.lesson.seventhlesson.second;
+package ru.itmo.lesson.eighthlesson.second;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,6 @@ public class Box extends Shape {
     private final ArrayList<Shape> shapes = new ArrayList<>();
 
     public Box(double maxVolume) {
-        super(maxVolume);
         this.maxVolume = maxVolume;
     }
 
@@ -24,5 +23,10 @@ public class Box extends Shape {
         maxVolume -= currentValue;
 
         return true;
+    }
+
+    @Override
+    public double getVolume() {
+        return maxVolume;
     }
 }
